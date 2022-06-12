@@ -64,14 +64,12 @@
     green_Audio = document.getElementById("greensound");
     yellow_Audio = document.getElementById("yellowsound");
     red_Audio = document.getElementById("redsound");
-    drive_Audio = document.getElementById("drivesound")
 
 
 
     if (label=="초록색") {
 
       if (green_Audio.paused) {
-         drive_Audio.pause();
          green_Audio.currentTime = 0;
          green_Audio.play();
       }
@@ -85,7 +83,6 @@
     if (label=="노란색") {
 
       if (yellow_Audio.paused) {
-        drive_Audio.pause();
         yellow_Audio.currentTime = 0;
         yellow_Audio.play();
         }
@@ -98,7 +95,6 @@
     if (label=="빨간색") {
 
       if (red_Audio.paused) {
-        drive_Audio.pause();
         red_Audio.currentTime = 0;
         red_Audio.play();
       }
@@ -108,10 +104,6 @@
       <h3 style="color: red;">Red Light</h3>
       `;
     }else{
-      if (drive_Audio.paused) {
-        //music_Audio.currentTime = music_Audio.paused;
-        drive_Audio.play();
-      }
     	document.getElementById("status").innerHTML = `<h3 style="color: #085129;"><i class="fa fa-check-square"></i></h3>
     	<h3 style="color: #085129;">Everything is OK</h3>`;
     }
